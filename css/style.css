@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0a7285;
+    margin-bottom: 2rem;
+}
+
+
+.form {
+    text-align: center;
+    color: #0f96ad;
+    font-size: 16px;
+    margin-right: 3rem;
+}
+
+.field {
+    margin: 2rem;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+
+label {
+    margin-right: 1rem;
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
+
+h2 {
+    margin-top: 4rem;
+}
+
+/* The part after the form */
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid gray;
+    margin: 0.5rem;
+    width: 8rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    color: gray;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+
+/* progress bar section*/
+.container {
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+    padding: 0.5rem;
+    margin: 2rem;
+}
+
+.container .left {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 30% 80%;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container .left .item2 span {
+     display: block;
+     position: relative;
+}
+
+.span1 {
+    left: 10rem;
+    top: 2rem;
+}
+
+.span2 {
+    left: 11rem;
+    top: 5rem;
+}
+.spinner1 {
+    width: 70%;
+    border: 1px solid #13cfcf;
+    height: 2rem;
+    position: relative;
+    top: 6.5rem;
+    background-color: #13cfcf;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.spinner2 {
+    width: 70%;
+    border: 1px solid #13cfcf;
+    height: 2rem;
+    position: relative;
+    top: 9.5rem;
+    background-color: #13cfcf;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.brexSpinner, .stripeSpinner, .amexSpinner {
+    width: 70%;
+    border: 1px solid #13cfcf;
+    height: 2rem;
+    position: relative;
+    top: 8rem;
+    background-color: #13cfcf;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+
+.brexSpan, .stripeSpan, .amexSpan {
+    left: 10.3rem;
+    top: 1.5rem;
+    display: none !important;
+}
+

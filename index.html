@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Financial Calculator</title>
+</head>
+<body>
+    
+    <h1>Calculate your Rewards</h1>
+    <form class="form">
+        <div class="field">
+            <label>Vendor/Bills</label>
+            <input id="vendor" onkeyup="changeSpinner()" type="number" min="0" placeholder="Enter a number"/>
+        </div>
+        <div class="field">
+            <label>Media/Ad Spend</label>
+            <input id="media"  onkeyup="changeSpinner()" type="number" min="0" placeholder="Enter a number" />
+        </div>
+        <div class="field">
+            <label>Corp.Spend</label>
+            <input id="corp"  onkeyup="changeSpinner()" type="number" min="0" placeholder="Enter a number" />
+        </div>
+        <div class="field">
+            <label>Team Project</label>
+            <input id="team"  onkeyup="changeSpinner()" type="number" min="0" placeholder="Enter a number"/>
+        </div>
+    </form>
+    
+    <h2>Compare your Rewards</h2>
+    <div class="buttons">
+        <button disabled onclick="showBrex()">Brex</button>
+        <button disabled onclick="showStripe()">Stripe</button>
+        <button disabled onclick="showAmex()">Amex</button>
+    </div>
+    
+  <div class="container">
+    <div class="right">
+        <div class="brexSpinner"></div>
+        <div class="stripeSpinner"></div>
+        <div class="amexSpinner"></div>
+
+        <div class="spinner1"></div>
+
+        <div class="spinner2"></div>
+    </div>
+    <div class="left">
+        <div class="item1">
+            <img src="./assets//image.png" />
+        </div>
+        <div class="item2">
+            <span class="brexSpan">Brex business card</span>
+            <span class="stripeSpan">Stribe business card</span>
+            <span class="amexSpan">Amex business card</span>
+            <span class="span1">Ultimated Rewards</span>
+            <span class="span2">Lifetime Rewards</span>
+        </div>
+       
+    </div>
+  </div>
+    
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
